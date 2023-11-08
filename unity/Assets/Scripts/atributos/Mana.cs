@@ -26,7 +26,7 @@ public class Mana : MonoBehaviour
     {
         if (mana > 0)
         {
-            if (valor >= 0 && valor <= manaMaxmio)
+            if (valor >= 0 && valor <= manaMaximo)
             {
                 mana = valor;
             }
