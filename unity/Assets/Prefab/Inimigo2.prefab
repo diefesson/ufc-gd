@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c7075797af29a48bac525535683138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoDeMovimentacao: 1
+  tempoDeMovimentacao: 2
   anguloMin: -180
   anguloMax: 180
 --- !u!114 &3649458474787112328
@@ -181,8 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5cbff8191f5d14bae50b97b78f9850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMaxima: 5
+  velocidade: 10
+  velocidadeMaxima: 10
 --- !u!114 &4409029570341021643
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c7075797af29a48bac525535683138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoDeMovimentacao: 1
+  tempoDeMovimentacao: 4
   anguloMin: -180
   anguloMax: 180
 --- !u!114 &7226029662261577741
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c21fca8cd292b8408adbfc5c9f199b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 1
-  vidaMaxima: 1
+  vida: 5
+  vidaMaxima: 5
   semVidaSeDestroi: 1
   tempoAntesDestruicao: 0
   pontuacao: 0
