@@ -270,4 +270,4 @@ MonoBehaviour:
   tempoEntreDisparos: 5
   tempoMinimoAntesComecarAtirar: 0
   tempoMaximoAntesComecarAtirar: 0
-  anguloEntreDirecoes: 0
+  anguloEntreDirecoes: 120

@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projetil: {fileID: 8588542878374561225, guid: 308fe55757863e54696c89fc34a04630, type: 3}
-  quantidadeLinhas: 1
+  quantidadeLinhas: 2
   tempoEntreDisparos: 1
   tempoMinimoAntesComecarAtirar: 3
   tempoMaximoAntesComecarAtirar: 5
