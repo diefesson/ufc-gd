@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6465920802348747724}
   - component: {fileID: 354396478484942353}
   - component: {fileID: 3748567951806970839}
+  - component: {fileID: 918254974682935463}
   m_Layer: 0
   m_Name: Inimigo2
   m_TagString: Inimigo
@@ -252,3 +253,21 @@ MonoBehaviour:
   anguloEntreDirecoes: 5
   variacaoAnguloEntreDirecoes: 0
   seDestroi: 1
+--- !u!114 &918254974682935463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791585953103435934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34323b4f1f330c4baba874eafb2b134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projetil: {fileID: 8588542878374561225, guid: 308fe55757863e54696c89fc34a04630, type: 3}
+  numeroDirecoes: 3
+  tempoEntreDisparos: 5
+  tempoMinimoAntesComecarAtirar: 0
+  tempoMaximoAntesComecarAtirar: 0
+  anguloEntreDirecoes: 0
