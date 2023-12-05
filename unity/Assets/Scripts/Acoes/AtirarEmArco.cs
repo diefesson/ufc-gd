@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AtirarEmArcoConcentrado : MonoBehaviour
+public class AtirarEmArco : MonoBehaviour
 {
     public GameObject projetil;
     public int numeroDirecoes;
     public float tempoEntreDisparos;
     public float tempoMinimoAntesComecarAtirar;
     public float tempoMaximoAntesComecarAtirar;
-    public float anguloEntreDirecoes;
-    private float angulo;
-    private float anguloTotal;
+    private int angulo;
     private Quaternion rotacaoInicial;
     private IEnumerator coroutine;
 
@@ -39,9 +37,12 @@ public class AtirarEmArcoConcentrado : MonoBehaviour
 
     public void Atira()
     {
-        transform.Rotate(0.0f, 0.0f, -((anguloTotal / 2) - (angulo / 2)), Space.Self);
+        // 90, pois é a metade de 180 graus
+        transform.Rotate(0.0f, 0.0f, -(90 - (angulo / 2)), Space.Self);
         Instantiate(projetil, transform.position, transform.rotation);
 
+        // for (int i = 2; i <= numeroDirecoes; i++)
+        // OU
         for (int i = 1; i <= numeroDirecoes - 1; i++)
         {
             transform.Rotate(0.0f, 0.0f, angulo, Space.Self);
@@ -53,8 +54,7 @@ public class AtirarEmArcoConcentrado : MonoBehaviour
 
     public void AtualizaAngulos()
     {
-        anguloTotal = anguloEntreDirecoes * (numeroDirecoes - 1);
-        angulo = anguloTotal / numeroDirecoes;
+        angulo = 180 / numeroDirecoes;
     }
 
     public void SetProjetil(GameObject proj)
@@ -74,22 +74,6 @@ public class AtirarEmArcoConcentrado : MonoBehaviour
 
         if (numeroDirecoes <= 0)
             numeroDirecoes = 1;
-
-        AtualizaAngulos();
-    }
-
-    public void SetAnguloEntreDirecoes(int angEntreDir)
-    {
-        anguloEntreDirecoes = angEntreDir;
-        AtualizaAngulos();
-    }
-
-    public void VariacaoAnguloEntreDirecoes(int variacao)
-    {
-        anguloEntreDirecoes += variacao;
-
-        if (anguloEntreDirecoes <= 0)
-            anguloEntreDirecoes = 1;
 
         AtualizaAngulos();
     }
