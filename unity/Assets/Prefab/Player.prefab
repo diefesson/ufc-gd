@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 4259500500171388959}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 0.2, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 747346713010123479}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0.6751284, g: 0, b: 0.7924528, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,8 @@ GameObject:
   - component: {fileID: 121328370713766874}
   - component: {fileID: 6292341354225475742}
   - component: {fileID: 7032048681992777751}
-  - component: {fileID: 1541563401145508188}
+  - component: {fileID: 6028382983655272809}
+  - component: {fileID: 3836072495335905596}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -235,7 +236,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 100000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -248,8 +249,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1541563401145508188
-BoxCollider2D:
+--- !u!114 &6028382983655272809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163569203736483376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c21fca8cd292b8408adbfc5c9f199b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 1
+  vidaMaxima: 4
+  semVidaSeDestroi: 1
+  tempoAntesDestruicao: 0
+  pontuacao: 0
+  eventosAntesDestruicao:
+    m_PersistentCalls:
+      m_Calls: []
+  eventosReducaoVida:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!58 &3836072495335905596
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -277,22 +301,12 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.06
 --- !u!1 &9123879387127304061
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projetil: {fileID: 6177200313094662628, guid: 356f70d9b39aef541ae718a6d0f71f4a, type: 3}
   numeroDirecoes: 2
-  tempoEntreDisparos: 0.05
+  tempoEntreDisparos: 1
   tempoMinimoAntesComecarAtirar: 0
   tempoMaximoAntesComecarAtirar: 0
   anguloEntreDirecoes: 5

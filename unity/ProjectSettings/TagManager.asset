@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Arma
   - Inimigo
+  - Parede
   layers:
   - Default
   - TransparentFX

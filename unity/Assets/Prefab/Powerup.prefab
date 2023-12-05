@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3220499064668067258}
   - component: {fileID: 3761887610783290532}
   - component: {fileID: 7325625916732291519}
+  - component: {fileID: 6795793136936609198}
+  - component: {fileID: 4520041459132360180}
   m_Layer: 0
   m_Name: Powerup
   m_TagString: Untagged
@@ -140,3 +142,30 @@ MonoBehaviour:
   anguloEntreDirecoes: 5
   variacaoAnguloEntreDirecoes: 0
   seDestroi: 1
+--- !u!114 &6795793136936609198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032083625973642860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6080f5a0aa61d14ba853d6c86f9ab13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outroTag: Player
+  seDestroiNoContato: 0
+--- !u!114 &4520041459132360180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032083625973642860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f70fd065ad0e143ad277472aa0ab1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: -1
