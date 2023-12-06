@@ -268,6 +268,6 @@ MonoBehaviour:
   projetil: {fileID: 8588542878374561225, guid: 308fe55757863e54696c89fc34a04630, type: 3}
   numeroDirecoes: 3
   tempoEntreDisparos: 5
-  tempoMinimoAntesComecarAtirar: 0
-  tempoMaximoAntesComecarAtirar: 0
+  tempoMinimoAntesComecarAtirar: 5
+  tempoMaximoAntesComecarAtirar: 5
   anguloEntreDirecoes: 120
